@@ -1,3 +1,10 @@
+
+
+
+# REPO_URL https://github.com/Chrisbkyle/blackbird
+
+
+
 # create project folder and download React
 npx create-react-app blackbird
 cd blackbird
@@ -19,3 +26,8 @@ git commit -m'update logo'
 git push --set-upstream upstream update-logo
 # create PR to main
 gh pr create -B master
+# accept PR
+git checkout master
+gh pr list
+gh pr checkout 1
+gh pr merge
